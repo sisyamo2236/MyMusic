@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8718B635263C5C65008B11D8 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718B634263C5C65008B11D8 /* SoundPlayer.swift */; };
+		8756FBDC263C867F001603EA /* ButtonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756FBDB263C867F001603EA /* ButtonImageView.swift */; };
 		878F721B262EA52900E7D0EB /* MyMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F721A262EA52900E7D0EB /* MyMusicApp.swift */; };
 		878F721D262EA52900E7D0EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F721C262EA52900E7D0EB /* ContentView.swift */; };
 		878F721F262EA52A00E7D0EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878F721E262EA52A00E7D0EB /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		8718B634263C5C65008B11D8 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		8756FBDB263C867F001603EA /* ButtonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImageView.swift; sourceTree = "<group>"; };
 		878F7217262EA52900E7D0EB /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		878F721A262EA52900E7D0EB /* MyMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicApp.swift; sourceTree = "<group>"; };
 		878F721C262EA52900E7D0EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				878F721A262EA52900E7D0EB /* MyMusicApp.swift */,
 				878F721C262EA52900E7D0EB /* ContentView.swift */,
+				8756FBDB263C867F001603EA /* ButtonImageView.swift */,
 				8718B634263C5C65008B11D8 /* SoundPlayer.swift */,
 				878F721E262EA52A00E7D0EB /* Assets.xcassets */,
 				878F7223262EA52A00E7D0EB /* Info.plist */,
@@ -143,6 +146,7 @@
 			files = (
 				878F721D262EA52900E7D0EB /* ContentView.swift in Sources */,
 				8718B635263C5C65008B11D8 /* SoundPlayer.swift in Sources */,
+				8756FBDC263C867F001603EA /* ButtonImageView.swift in Sources */,
 				878F721B262EA52900E7D0EB /* MyMusicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +277,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMusic/Preview Content\"";
+				DEVELOPMENT_TEAM = SPVT5CR7CN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -294,6 +299,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMusic/Preview Content\"";
+				DEVELOPMENT_TEAM = SPVT5CR7CN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

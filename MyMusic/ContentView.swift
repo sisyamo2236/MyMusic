@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //　音を鳴らすためのSoundPlayerクラスのインスタンス生成
+    let soundPlayer = SoundPlayer()
+    
     var body: some View {
         ZStack {
             // 背景画像を指定する
@@ -17,28 +21,27 @@ struct ContentView: View {
             // 画面いっぱいになるようにセーフエリア外までいっぱいになるように指定
                 .edgesIgnoringSafeArea(.all)
             // アスペクト比(縦横比)を維持して短辺基準に収まるようにする
-                .aspectRatio(contentMode: .fill)
+                .aspectRatio( contentMode: .fill)
             
             // 水平にレイシフト(横方向にレイシスト)
             HStack{
                 // シンバルボタン
                 Button(action:{
                     // ボタンをタップしたときにアクション
+                    // シンバルの音を鳴らす
+                    soundPlayer.cymbalPlay()
                 }){
-                    // 画像を表示します
-                    Image("cymbal")
-                    // ボタン内の画像をカラー画像となるように指定する
-                        .renderingMode(.original)
+                    ButtonImageView(imageName: "cymbal")
                 }// シンバルボタン　ここまで
                 
                 // ギターボタン
                 Button(action:{
                     // ボタンをタップした時のアクション
+                    // ギターの音を鳴らす
+                    soundPlayer.guitarPlay()
                 }){
-                    // 画像を表示する
-                    Image("guitar")
-                        // ボタン内の画像をカラー画像となるように指定する
-                        .renderingMode(.original)
+
+                    ButtonImageView(imageName: "guitar")
                 }// ギターボタン　ここまで
                 
             } //HStack ここまで
@@ -49,7 +52,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
             ContentView()
         }
     }
